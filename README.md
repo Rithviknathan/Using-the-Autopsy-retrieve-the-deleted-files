@@ -1,22 +1,54 @@
 # Using-the-Autopsy-retrieve-the-deleted-files
 ## AIM:
 To use Autopsy in Kali Linux to retrieve and analyze deleted files from a disk image.
-
+## EQUIPMENT REQURIED:
+● Hardware: Personal Computer (PC)
+```
+Register Number:212223100045
+Name: RITHVIK S
+```
 ## DESIGN STEPS:
-### Step 1:
-Open Autopsy and create a new case with appropriate case details.
+# 1. Copy Files to the Virtual Disk
+Open File Explorer → Go to the new drive (D:), where the folder created in the New Virtual Disk
+Create a new folder or use the entire disk and then copy images or files into it.
+# 2. Delete the Files
+Select any one or two images → Press Delete.
+Empty the Recycle Bin to permanently delete them.
+# 3. Recover Deleted Files Using Autopsy
+# Open Autopsy & Create a New Case
+Launch Autopsy and Run as a administrator
+Click Create New Case.
+![a1](https://github.com/user-attachments/assets/5b5cf129-3382-4f0e-b0ee-6c5fbfed8fc3)
+Enter a Case Name (e.g., Autopsy-1).
+Choose a Case Folder location.
+Click Next → Click Finish.
+![a2](https://github.com/user-attachments/assets/54f08e44-f85b-476e-9d22-e944896489b3)
 
-### Step 2:
-Add a disk image as a data source and let Autopsy analyze the content.
+# Add the Virtual Disk as an Evidence Source
+Click Add Data Source → Select Host
+![a3](https://github.com/user-attachments/assets/d5acae00-66e8-4da8-ac12-9eb6e977fe13)
+Select Local Disk → next
+![a4](https://github.com/user-attachments/assets/727e0bcb-15f8-45ea-9da3-c3b575111b71)
+Select Disk → Choose the VHD drive (DFDI(D:))
+![a5](https://github.com/user-attachments/assets/90a35cec-9e12-464b-ae6e-f171ccbd3b87)
+Click Next → Keep default settings → Click Finish.
+Wait for Autopsy to process the disk.
+# Recover Deleted Files
+Go to File Views (left panel).
+![a6](https://github.com/user-attachments/assets/8407ea2d-9e92-4291-910b-f790b70270a9)
+Click Deleted Files → Find your deleted images.
+Right-click an image → Click Extract File.
+![Screenshot 2025-03-28 093408](https://github.com/user-attachments/assets/512e434e-45d1-41f2-ad37-9cf2908465e3)
+Select a folder to see the recovered files (e.g., K:\DFDI-Extracted).
+Image is recovered successfully.
 
-### Step 3:
-Navigate to the "Deleted Files" section in Autopsy and examine or recover the deleted files.
-
-## PROGRAM:
-Autopsy Deleted File Recovery Steps
-
-## OUTPUT:
-Recovered Deleted File List and Details
-
-## RESULT:
+# Output :
+Folder before deleting the files
+![435603577-d190a167-ad77-4f90-a150-7c4d898c884d](https://github.com/user-attachments/assets/2a4981e9-9697-4086-81ee-a43d8d7926a3)
+Folder after deleting the files
+![435603619-e6c83bc6-853b-4a6d-bda0-6872d06adb37](https://github.com/user-attachments/assets/58f74a0e-3b10-42e7-80b3-f8dca6de264d)
+Folder after extracting the deleted images using autopsy
+![435603658-d9d17cde-a820-472f-b276-0aaab02080dc](https://github.com/user-attachments/assets/a597a093-d1b6-4b34-90ab-338e7aa3179a)
+# RESULT:
 Deleted files were successfully retrieved and analyzed using Autopsy.
+
